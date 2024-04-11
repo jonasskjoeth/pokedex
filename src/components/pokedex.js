@@ -87,7 +87,7 @@ function Pokedex() {
         {pokemon.map((pkmn, index) => (
           <div
             key={pkmn.id}
-            className={styles.pokebox}
+            className={styles.pokedex}
             style={{
               backgroundColor: getTypeColor(pkmn.types[0].type.name),
               border: `2px solid ${getTypeColor(pkmn.types[0].type.name)}`,
@@ -122,19 +122,19 @@ function Pokedex() {
       </div>
   
       {selectedPokemon && (
-        <div className={styles.modalContainer} onClick={() => setSelectedPokemon(null)}>
-          <div className={styles.modalContent}>
+        <div className={styles.modelContainer} onClick={() => setSelectedPokemon(null)}>
+          <div className={styles.modelContent}>
             <img
               src={selectedPokemon.sprites.other["official-artwork"].front_default}
               alt={selectedPokemon.name}
-              className={styles.modalPokemonImage}
+              className={styles.modelPokemonImage}
             />
-            <div className={styles.modalPokemonInfo}>
+            <div className={styles.modelPokemonInfo}>
               <h2>{selectedPokemon.name}</h2>
                 {selectedPokemon.types.map((type) => (
                   <div
                     key={type.type.name}
-                    className={styles.modalPokemonType}
+                    className={styles.modelPokemonType}
                     style={{ backgroundColor: (type.type.name) }}
                   >
                     {type.type.name}
