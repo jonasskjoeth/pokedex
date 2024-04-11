@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./styleAbout.css";
 
 const About = () => {
   return (
