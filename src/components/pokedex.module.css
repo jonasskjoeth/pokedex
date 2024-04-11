@@ -5,7 +5,7 @@
     margin-top: 75px;
   }
   
-  .pokedex {
+  .pokebox {
     display: flex;
     flex-direction: row;
     background-color: bisque;
@@ -15,7 +15,7 @@
     box-sizing: border-box;
   }
   
-  .pokedex .info {
+  .pokebox .info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -31,7 +31,7 @@
     font-size: 16px;
   }
   
-  .pokedex img {
+  .pokebox img {
     max-width: 200%;
     max-height: 200%;
     margin-left: 0px;
@@ -40,30 +40,30 @@
     transition: transform 0.2s ease-in-out;
   }
   
-  .pokedex:hover img {
+  .pokebox:hover img {
     transform: scale(1.5);
   }
   
-  .modelContainer {
+  .modalContainer {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    font-size: 1px;
+    font-size: 20px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .modelImage {
+  .modalImage {
     max-height: 80%;
     max-width: 80%;
   }
   
-  .pokedex p {
+  .pokebox p {
     margin-left: 40px;
     font-weight: 900;
     font-size: 10px;
@@ -75,7 +75,7 @@
   }
   
   
-  .modelPokemonInfo p1 {
+  .modalPokemonInfo p1 {
     margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -84,7 +84,7 @@
   
   }
   
-  .modelPokemonInfo p2 {
+  .modalPokemonInfo p2 {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 10px;
